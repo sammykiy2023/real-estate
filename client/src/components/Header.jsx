@@ -2,7 +2,7 @@ import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useSelector } from 'react-redux'; // for authentication
 
-export default function header() {
+export default function Header() {
 
   const { currentUser } = useSelector(state => state.user);
 
