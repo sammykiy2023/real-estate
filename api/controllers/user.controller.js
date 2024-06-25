@@ -23,7 +23,7 @@ export const updateUser = async (req, res, next) => {
           avatar: req.body.avatar,
         },
       },
-      { new: true }
+      { new: true } //Return updated information
     );
 
     const { password, ...rest } = updatedUser._doc;
